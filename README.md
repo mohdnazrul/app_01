@@ -131,7 +131,6 @@ By default the server listens on http://localhost:3000 (or the port set in PORT)
 - `GET /api/users` – List users (admin or general listing, depending on your logic)  
 
 ---
-
 ## Scripts
 
 - `npm run dev` – Start dev server with hot-reload  
