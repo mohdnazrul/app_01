@@ -43,7 +43,7 @@ export const getUserById = async (id: string) => {
 };
 
 export const updateUser = async (id: string, data: UpdateUserData) => {
-  const updateData: Record<string, string> = {};
+  const updateData: Record<string, string | null> = {};
 
   if (data.email) {
     const existingUser = await prisma.user.findUnique({
