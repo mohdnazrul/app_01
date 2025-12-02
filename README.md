@@ -9,6 +9,7 @@ A robust Node.js backend API built with Express, TypeScript, PostgreSQL, and Pri
 - ✅ **PostgreSQL** - Powerful relational database
 - ✅ **Prisma ORM** - Type-safe database client and migrations
 - ✅ **JWT Authentication** - Secure user authentication with register/login endpoints
+- ✅ **Rate Limiting** - Protection against brute-force attacks
 - ✅ **User CRUD Operations** - Full CRUD API for user management
 - ✅ **ESLint + Prettier** - Code linting and formatting
 - ✅ **Jest** - Unit and integration testing
@@ -28,7 +29,8 @@ src/
 │   ├── authRoutes.ts
 │   └── userRoutes.ts
 ├── middleware/       # Custom middleware
-│   └── auth.ts
+│   ├── auth.ts
+│   └── rateLimiter.ts
 ├── utils/            # Utility functions
 │   ├── prisma.ts
 │   └── jwt.ts
